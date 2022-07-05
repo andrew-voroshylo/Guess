@@ -2,6 +2,25 @@ package Guess;
 import java.util.*;
 
 public class GuessNumber {
+
+    int counter = 0;
+    int continueGame = 0;
+    int continueAsking = 0;
+    String nextGame = "m";
+
+
+    public String getSetup(){
+        return counter+continueGame+continueAsking+nextGame;
+    }
+
+    int endCounter = 6;
+    int endContinueGame = 1;
+    int endContinueAsking = 1;
+    String endNextGame = "y";
+    public String getEnd(){
+        return endCounter+endContinueGame+endContinueAsking+endNextGame;
+    }
+
     public static void main(String[] args) {
         int counter = 0;
         int continueGame = 0;
@@ -66,5 +85,6 @@ public class GuessNumber {
             }
         }
     }
+
 
 }
