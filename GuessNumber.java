@@ -1,4 +1,3 @@
-package Guess;
 import java.util.*;
 
 public class GuessNumber {
